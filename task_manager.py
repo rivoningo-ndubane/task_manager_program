@@ -8,7 +8,7 @@ def read_users_file():
     a dictionary.
 
     Returns:
-        dictionary: Conatins all the users read from user.txt
+        dictionary: Contains all the users read from user.txt
     """
     # Creating dictionary
     user_dict = {}
