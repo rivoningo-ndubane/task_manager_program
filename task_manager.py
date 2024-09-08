@@ -143,7 +143,7 @@ while user_login == "Y":
         user_login = input("Would You Like to try to login again?(Y/N): ").strip().upper()
         username = None
 
-# When user has choosen not to login
+# When user has chosen not to login
 if user_login != "Y" and user_login != "N":
     print(".........\nInvalid input, Please restart process.")
 
@@ -188,7 +188,7 @@ while username == "admin":
             elif register_user == "Y":
                 continue
             else:
-                print("Input not recognised, please restart process")
+                print("Input not recognized, please restart process")
                 break
 
     # Add New Task
@@ -214,13 +214,13 @@ while username == "admin":
                 break
 
             completion = "No"
-            description = input("\nTask descriptio:\n")
+            description = input("\nTask description:\n")
 
             add_task(task, assigned_to, date_assigned, due_date, completion, description)
             print("\nTask Added")
                     
         else:
-            print("User not recognised")
+            print("User not recognized")
 
     # View all Tasks
     elif menu == "va":
@@ -305,13 +305,13 @@ while username in read_users_file() and username != "admin":
                 break
 
             completion = "No"
-            description = input("\nTask descriptio:\n")
+            description = input("\nTask description:\n")
 
             add_task(task, assigned_to, date_assigned, due_date, completion, description)
             print("\nTask Added")
                     
         else:
-            print("User not recognised")
+            print("User not recognized")
 
     # View all tasks
     elif menu == "va":
