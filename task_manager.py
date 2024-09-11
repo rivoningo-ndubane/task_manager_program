@@ -14,7 +14,7 @@ def read_users_file():
     user_dict = {}
 
     try:
-        user_file = open("./user.txt", "r")
+        user_file = open("./user_file.txt", "r")
         contents = user_file.readlines()
 
         for user in contents:
@@ -50,8 +50,8 @@ def register_new_user(new_username, new_password):
     """
 
     try:
-        user_file = open("./user.txt", "r")
-        user_file = open("./user.txt", "a")
+        user_file = open("./user_file.txt", "r")
+        user_file = open("./user_file.txt", "a")
         user_file.write(f"\n{new_username}, {new_password}")
         user_file.close()
     except FileNotFoundError:
